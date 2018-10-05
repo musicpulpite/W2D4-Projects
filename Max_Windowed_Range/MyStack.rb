@@ -23,12 +23,6 @@ class MyStack
     store.push(el)
   end
 
-  def min
-  end
-
-  def max
-  end
-
   private
 
   attr_reader :store

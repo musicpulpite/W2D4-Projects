@@ -20,6 +20,7 @@ class StackQueue
   end
 
   def dequeue
+    raise "Cannot dequeue from empty array" if empty?
     until size == 1
       stack_temp.push(stack.pop)
     end
