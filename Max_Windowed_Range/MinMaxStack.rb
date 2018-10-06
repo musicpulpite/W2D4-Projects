@@ -10,14 +10,6 @@ class MinMaxStack < MyStack
     @max = nil
   end
 
-  # def min
-  #   min_val
-  # end
-  #
-  # def max
-  #   max_val
-  # end
-
   def push(el)
     prev_max, prev_min = self.max, self.min
 
@@ -30,6 +22,7 @@ class MinMaxStack < MyStack
   def pop
     popped_num = store.pop
     self.max, self.min = popped_num[1], popped_num[2]
+    popped_num
   end
 
 end
